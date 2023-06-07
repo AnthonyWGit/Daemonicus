@@ -12,6 +12,6 @@ class HomepageController extends AbstractController
     #[Route('/')]
     public function exist() : Response
     {
-        die("IS IS");
+        return $this->render("homepage.html.twig");
     }
 }
