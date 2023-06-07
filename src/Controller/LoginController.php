@@ -7,11 +7,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
-class HomepageController extends AbstractController
+class LoginController extends AbstractController
 {
-    #[Route('/', name: 'app_homepage')]
-    public function exist() : Response
+    #[Route('/login', name: 'app_login')]
+    public function loggin() : Response
     {
-        return $this->render("homepage.html.twig");
+        return $this->render("login.html.twig");
     }
 }
